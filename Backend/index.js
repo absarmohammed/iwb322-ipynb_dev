@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(cors());
 
 //Database Connecction with MongoDB
-mongoose.connect("mongodb+srv://absar6152:Absar6152@cluster0.dezgn.mongodb.net/shopper");
+mongoose.connect("mongodb+srv://Username:Password@cluster0.dezgn.mongodb.net/shopper");
 
 //API Creation
 app.get("/",(req,res)=>{
