@@ -6,7 +6,7 @@ import ballerina/jwt;
 listener http:Listener backendListener = new(8080);
 
 // MongoDB client configuration
-mongo:Client mongoClient = check new (connection = "mongodb+srv://absar6152:Absar6152@cluster0.dezgn.mongodb.net/shopper");
+mongo:Client mongoClient = check new (connection = "mongodb+srv://Username:Password@cluster0.dezgn.mongodb.net/shopper");
 
 // Define the MongoDB database and collections
 mongo:Database db = check mongoClient->getDatabase("shopper");
